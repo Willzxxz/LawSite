@@ -1,12 +1,11 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, HTMLMotionProps } from "framer-motion";
 
-interface ButtonProps {
+interface ButtonProps extends Omit<HTMLMotionProps<"button">, "children"> {
   children: React.ReactNode;
   onClick?: () => void;
   className?: string;
-  [key: string]: any;
 }
 
 const Button = ({

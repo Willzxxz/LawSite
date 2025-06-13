@@ -143,7 +143,7 @@ export default function Testimonials() {
                   <div key={index} className="bg-[#033651] rounded-lg p-6">
                     {/* Content */}
                     <blockquote className="text-gray-300 mb-6 leading-relaxed text-base">
-                      "{testimonial.content}"
+                      &quot;{testimonial.content}&quot;
                     </blockquote>
 
                     {/* Author */}
