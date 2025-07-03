@@ -73,13 +73,13 @@ export default function Hero() {
 
           {/* Right Side - Image */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
+            <div className="relative w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
               <Image
                 src="/business-men.png"
                 alt="Advogados Profissionais"
-                width={500}
-                height={420}
-                className="lg:w-[660px] lg:h-[550px]"
+                width={800}
+                height={600}
+                className="w-full h-auto"
                 priority
               />
             </div>

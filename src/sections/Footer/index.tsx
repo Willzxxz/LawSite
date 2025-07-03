@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SocialLinks from "../../components/general/SocialLinks";
+import Logo from "../Navbar/components/Logo";
 
 export default function Footer() {
   return (
@@ -8,12 +9,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <Link
-              href="/"
-              className="text-2xl font-bold mb-4 block text-[#EBCB90]"
-            >
-              CARGNIN ADVOCACIA
-            </Link>
+            <div className="mb-4 block">
+              <Logo />
+            </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Oferecemos soluções jurídicas inovadoras com tecnologia moderna e
               experiência consolidada. Junte-se a nós na jornada para defender

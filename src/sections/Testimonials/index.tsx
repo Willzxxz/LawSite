@@ -169,7 +169,7 @@ export default function Testimonials() {
             <div className="flex items-center justify-center space-x-4 mt-8">
               <button
                 onClick={prevTestimonial}
-                className="p-2 rounded-full bg-[#94754E] hover:bg-[#EBCB90] hover:text-[#011223] text-white transition-colors"
+                className="p-2 cursor-pointer rounded-full bg-[#94754E] hover:bg-[#EBCB90] hover:text-[#011223] text-white transition-colors"
                 aria-label="Depoimento anterior"
               >
                 <svg
@@ -193,7 +193,7 @@ export default function Testimonials() {
                   <button
                     key={index}
                     onClick={() => setCurrentIndex(index)}
-                    className={`w-3 h-3 rounded-full transition-colors ${
+                    className={`w-3 cursor-pointer h-3 rounded-full transition-colors ${
                       index === currentIndex ? "bg-[#EBCB90]" : "bg-gray-500"
                     }`}
                     aria-label={`Ir para slide ${index + 1}`}
@@ -203,7 +203,7 @@ export default function Testimonials() {
 
               <button
                 onClick={nextTestimonial}
-                className="p-2 rounded-full bg-[#94754E] hover:bg-[#EBCB90] hover:text-[#011223] text-white transition-colors"
+                className="p-2 cursor-pointer rounded-full bg-[#94754E] hover:bg-[#EBCB90] hover:text-[#011223] text-white transition-colors"
                 aria-label="Próximo depoimento"
               >
                 <svg

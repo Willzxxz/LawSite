@@ -119,7 +119,7 @@ export default function Contact() {
                   name="legalArea"
                   value={formData.legalArea}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-white/20 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent transition-colors bg-white/10 backdrop-blur-sm text-white"
+                  className="w-full px-4 py-3 border cursor-pointer border-white/20 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent transition-colors bg-white/10 backdrop-blur-sm text-white"
                 >
                   <option value="" className="text-gray-900">
                     Selecione uma área
@@ -169,7 +169,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-white text-[#94754E] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
+                className="w-full bg-white text-[#94754E] px-8 py-4 rounded-4xl text-lg font-semibold hover:bg-black hover:text-white cursor-pointer transition-colors shadow-lg hover:shadow-xl transform duration-200"
               >
                 Enviar Mensagem
               </button>

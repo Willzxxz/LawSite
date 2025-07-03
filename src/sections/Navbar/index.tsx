@@ -39,12 +39,9 @@ export default function Navbar() {
   return (
     <nav className="bg-gradient-to-r to-[#013849] from-[#011223] backdrop-blur-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex  justify-between items-center h-16">
           <Logo />
           <NavLinks />
-          <div className="hidden md:flex">
-            <SocialLinks className="text-white" />
-          </div>
           <div className="hidden md:flex self-end">
             <Button className="text-[#94754E] hover:bg-black hover:text-white font-bold bg-white">
               Agendar Consulta

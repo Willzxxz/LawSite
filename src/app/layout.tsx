@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Your Website",
-  description: "A modern website with navbar, hero, and footer",
+  title: "KSC Advogados",
+  description:
+    "Advocacia de excelência em diversas áreas do direito. Soluções jurídicas inovadoras, equipe experiente e atendimento personalizado.",
 };
 
 export default function RootLayout({
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfit.variable} font-[family-name:var(--font-outfit)] antialiased`}
+        className={`${montserrat.variable} font-[family-name:var(--font-montserrat)] antialiased`}
       >
         {children}
       </body>
